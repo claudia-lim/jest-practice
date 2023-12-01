@@ -50,17 +50,21 @@ module.exports.calculateTax = function calculateTax(salary) {
 }
 
 module.exports.greet = function greet(name, showWeather = true) {
-    let weather = ''
-    if (showWeather) {
-        const weatherOptions = [
-            'It is sunny today!',
-            'It is a bit chilly today.',
-            'It is raining today.',
-            'It is snowing.'
-        ]
-
-        weather = ' ' + weatherOptions[Math.floor(Math.random() * weatherOptions.length)]
+    if (typeof name !== "string") {
+        throw new TypeError('Name must be a string')
     }
-
-    return 'Hi ' + name + '.' + weather
+    if (typeof showWeather !== "boolean") {
+        throw new TypeError('showWeather must be boolean')
+    }
+        let weather = ''
+        if (showWeather) {
+            const weatherOptions = [
+                'It is sunny today!',
+                'It is a bit chilly today.',
+                'It is raining today.',
+                'It is snowing.'
+            ]
+            weather = ' ' + weatherOptions[Math.floor(Math.random() * weatherOptions.length)]
+        }
+        return 'Hi ' + name + '.' + weather
 }
