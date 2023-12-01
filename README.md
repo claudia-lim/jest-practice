@@ -1,4 +1,4 @@
-JEST Unit Testing Exercise
+<h1>JEST Unit Testing Exercise</h1>
 
 ## Table of contents
 
