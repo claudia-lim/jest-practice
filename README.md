@@ -7,6 +7,7 @@
 - [My process](#my-process)
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
+  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
